@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+.header{
+    background-color: #E5E5F7;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px 0px 30px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 10px #000;
+}
+
+
+.nav__div a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding: 15px;
+    position: relative;
+}
+
+.nav__div a::after{
+    content: "";
+    position: absolute;
+    background-color: #fa004b;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: .3s;
+}
+
+.nav__div a:hover::after{
+    width: 100%;
+}
+
+
+.header h1{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.banner{
+    color: #fff;
+    background-image: url(https://img.freepik.com/foto-gratis/vista-superior-conjunto-gadgets-luz-neon-purpura-azul_155003-19114.jpg?w=740&t=st=1688787544~exp=1688788144~hmac=3857fc6bd37ade080072a3710af3bdc73875c54aece20b14215f44dfb296c0bd);
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(50, 50, 50);
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    text-align: center;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 2.5em;
+    flex-direction: column;
+}
+
+.banner__p-box{
+    margin-top: 20px;
+    padding: 9px;
+    background-color: #fa004b;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.banner__p-box:hover{
+    background-color: rgb(33, 214, 9);
+    transition: background .2s ease-in-out;
+
+}
+.container{
+    background-color: #fff;
+    padding: 50px 40px 50px 40px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container__p{
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+.section{
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 1px solid #000; */
+    gap: 40px;
+    justify-content: center;
+}
+
+.section__div{
+    width: 15em;
+    height: 22em;
+    box-shadow: 0px 0px 8px #000;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__div:hover{
+    box-shadow: 0px 0px 15px #150e33;
+}
+.section__div img{
+    width: 100%;
+    height: 13em;
+    /* border: 1px solid #000; */
+    object-fit: cover;
+    padding: 10px;
+}
+
+.section__div-mini{
+    display: flex;
+    padding: 10px;
+    font-size: .7em;
+    flex-wrap: wrap;
+    height: 13em;
+    justify-content: end;
+    align-items: end;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.section__div-mini p{
+    cursor: pointer;
+}
+
+.section__div-mini p:nth-child(2){
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin-top: 10px;
+    background-color: #fa004b;
+    padding: 5px;
+}
+.section__div-mini p:nth-child(2):hover{
+    background-color: rgb(33, 214, 9);
+    transition: background .2s ease-in-out;
+}
+
+.section__two{
+    /* background-color: antiquewhite; */
+    width: 100%;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid #000; */
+    flex-wrap: wrap;
+}
+
+.section__two-div{
+    text-align: center;
+    font-size: .7em;
+    max-width: 200px;
+    padding: 30px;
+}
+
+.section__two-div i{
+    color: #413f3f; 
+    font-size: 2.8em;
+    margin-bottom: 15px;
+}
+
+
+/* Footer xd */
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    padding: 30px;
+    justify-content: space-around;
+    background-color: #e4e4fa;
+    align-content: space-around;
+    text-align: center;
+    gap: 30px;
+}
+
+.footer__section{
+    width: 10em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 8px;
+}
+
+.footer__section a{
+    text-decoration: none;
+    color: #191b1f;
+}
+
+.footer__section a:hover{
+    text-decoration: line-through;
+}
+
+.footer__section p:first-child{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .banner{
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        height: 10vh;
+        justify-content: space-around;
+
+    }
+    .banner{
+        font-size: 1.5em;
+    }
+    .nav__div h1{
+        font-size: 1.2;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container__p{
+        text-align: center;
+    }
+    .container{
+        padding: 50px 0px 50px 0px; 
+    }
+    .section{
+        padding: 50px 0px 50px 0px;
+    }
+}
