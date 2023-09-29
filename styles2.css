@@ -35,11 +35,11 @@ body{
 }
 
 .header_section-h3{
-    animation: animacion 3s steps(32), transparent .5s step-end infinite alternate;
-    width: 24em;
+    animation: animacion 3s steps(35), transparent .5s step-end infinite alternate;
+    width: 23em;
     white-space: nowrap;
     overflow: hidden;
-    font-size: 5ch;
+    font-size: 5.5ch;
     color: #fff;
     border-right: 3px solid;
     font-family: 'Inconsolata', monospace;
